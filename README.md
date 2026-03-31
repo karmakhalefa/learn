@@ -1,13 +1,19 @@
-# Learn PHP Project
+# Learn PHP Project 🚀
 
-This is my first PHP project.
+This is my first PHP project where I practice backend fundamentals while applying modern frontend styling using Tailwind CSS and SCSS.
 
-## Features
-- Form using POST
-- Validation
-- Display data
+## 📌 Features
+- Build form using POST method
+- Validate user input (required fields, email format)
+- Display submitted data dynamically
+- Clean UI using Tailwind CSS
+- Organized styling with SCSS
 
-## Technologies
+## 🛠 Technologies Used
 - PHP
 - HTML
-- CSS
+- Tailwind CSS
+- SCSS (Sass)
+  
+
+## 📂 Project Structure
