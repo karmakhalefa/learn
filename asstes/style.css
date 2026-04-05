@@ -1,0 +1,77 @@
+body{
+     
+      font-family: Montserrat;
+
+
+}
+.body_login{
+  
+      background-color: #FEAF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.login_page{
+        background-color: white;
+        width: 475px;
+    height: 773px;
+    border-radius: 20px;
+    padding:30px;
+}
+
+p{
+    color: gray;
+}
+h2{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.headr_form{
+
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login{
+    background-color:#FEAF00;
+    border-radius: 8px;
+    padding: 2px 20px;
+    width: 100%;
+    width: 415px;
+    height: 44px;
+       margin-block: 50px;
+         border :1px solid #E5E5E5; 
+}
+form{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.label_Name, .label_password,.label_confirm-password,.label_email {
+    font-size:19px;
+}
+
+.form_password, .confirm_Password ,.form_name ,.form_email{
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.input_confirm_Password, .input_email, .password, .username{
+    border-radius: 8px;
+    padding: 2px 20px;
+    width: 415px;
+    height: 44px;
+      border :1px solid #E5E5E5; 
+}
+
+span{
+      color:#FEAF00; 
+}
