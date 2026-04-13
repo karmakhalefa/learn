@@ -50,6 +50,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     } elseif($confirm !== $password){
         $confirmPasswordError = "Passwords do not match";
     }
+      // ✅ هنا بقى الحفظ
+    if(empty($nameError) && empty($emailError) && empty($passwordError) && empty($confirmPasswordError)){
+
+        $file = '' . __DIR__ . '/users.json';
+
+        if(file_exists($file)){
+            $data = file_get_contents($file);
+            $users = json_decode($data, true);
+        } else {
+            $users = [];
+        }
+
+        $users[] = [
+            'name' => $name,
+            'email' => $email,
+            'password' => password_hash($password, PASSWORD_DEFAULT)
+        ];
+
+        file_put_contents($file, json_encode($users, JSON_PRETTY_PRINT));
+
+        echo "تم التسجيل بنجاح ✅";
+    }
+
+    
 }
 ?>
 
