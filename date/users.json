@@ -1,4 +1,16 @@
 [
-  { "name": "John Doe", "email": "john.doe@example.com" },
-  { "name": "Jane Smith", "email": "jane.smith@example.com" }
+    {
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+    },
+    {
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com"
+    },
+    {
+        "name": "Jermaine Duncan",
+        "email": "jabad@mailinator.com",
+        "image": "f3dc2c1e11776458.png",
+        "password": "$2y$10$vTQ06ZIvqOoPzzACI5DwHumlF8kofp70moyrnwHzZorHAe4eqHbsC"
+    }
 ]
