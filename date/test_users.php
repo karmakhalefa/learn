@@ -1,11 +1,16 @@
 <?php
-// قراءة ملف JSON من نفس مجلد الملف الحالي
-$data = file_get_contents(__DIR__ . '/users.json');
 
-// تحويله لمصفوفة
-$users = json_decode($data, true);
+$file = __DIR__ . '/users.json';
 
-foreach($users as $user){
-    echo $user['name'] . "<br>";
+if(file_exists($file)){
+    $data = file_get_contents($file);
+    $users = json_decode($data, true);
+} else {
+    $users = [];
 }
+
+echo "<pre>";
+print_r($users);
+echo "</pre>";
+
 ?>
